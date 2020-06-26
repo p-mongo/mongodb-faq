@@ -23,6 +23,23 @@ For example, it is generally not possible to have a replica set with one
 node in a data center (or otherwise somewhere on the internet) and another
 node on one's home network.
 
+## Operation
+
+### Transaction Support
+
+Transactions require:
+
+- For replica set deployments: MongoDB 4.0+
+- For sharded cluster deployments: MongoDB 4.2+
+- WiredTiger storage engine
+
+Not supported:
+
+- Standalone servers (of any version)
+- Deployments using MMAPv1 storage engine
+
+[Answer](https://stackoverflow.com/questions/62349032/using-mongo-transactions/62351098#62351098)
+
 ## Querying
 
 ### Case Insensitive Querying
