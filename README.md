@@ -43,7 +43,7 @@ This section applies when you are running `mongod` yourself.
 - Ensure whitelist is configured with your IP.
   - Try 0.0.0.0 as the whitelist.
   - If your application is hosted on the internet, you need to whitelist the
-    application's IP address. [Herokup IP addresses](https://help.heroku.com/JS13Y78I/i-need-to-add-heroku-dynos-to-our-allowlist-what-are-ip-address-ranges-in-use-at-heroku)
+    application's IP address. [Heroku IP addresses](https://help.heroku.com/JS13Y78I/i-need-to-add-heroku-dynos-to-our-allowlist-what-are-ip-address-ranges-in-use-at-heroku)
 - Follow [general connectivity troubleshooting](#general-connectivity-troubleshooting)
 
 ### mongo Shell Does Not Wait For Deployment
