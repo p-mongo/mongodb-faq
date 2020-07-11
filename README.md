@@ -30,6 +30,8 @@ node on one's home network.
 
 - Get the connection working with `mongo` shell before troubleshooting
   connection through your application/using a driver.
+- Get a standalone connection working before troubleshooting connection
+  to a replica set.
 
 ### On-Premise Server Connectivity Troubleshooting
 
@@ -37,6 +39,10 @@ This section applies when you are running `mongod` yourself.
 
 - If your database and your application are not on the same machine,
   ensure `bindIp` is appropriately set.
+- If you are connecting to a replica set, both the hostnames/IP addresses
+  that are specified in the seed list AND the hostnames/IP addresses that
+  are specified in replica set configuration must be resolvable and accessible
+  from the client.
 
 ### Atlas Connectivity Troubleshooting
 
