@@ -28,10 +28,10 @@ node on one's home network.
 
 ### General Connectivity Troubleshooting
 
-- Get the connection working with `mongo` shell before troubleshooting
-  connection through your application/using a driver.
-- Get a standalone connection working before troubleshooting connection
-  to a replica set.
+- Get the connection working with `mongo` shell before trying to connect
+  through your application/using a driver.
+- Review the server logs (`mongod.log` etc.). Depending on the failure they
+  may have important cues.
 
 ### On-Premise Server Connectivity Troubleshooting
 
@@ -42,7 +42,14 @@ This section applies when you are running `mongod` yourself.
 - If you are connecting to a replica set, both the hostnames/IP addresses
   that are specified in the seed list AND the hostnames/IP addresses that
   are specified in replica set configuration must be resolvable and accessible
-  from the client.
+  from the client. The client uses the seed list to discover nodes that are
+  part of the replica set, from that point forward the client uses hostnames
+  that are provided in the replica set configuration and not the seed
+  addresses.
+- Get a standalone connection working before troubleshooting connection
+  to a replica set.
+- Get the connectivity working when you are running the database locally
+  prior to trying to run the database on a remote server/in the cloud.
 
 ### Atlas Connectivity Troubleshooting
 
@@ -73,6 +80,19 @@ client object instantiation does not mean the client successfully connected
 to the deployment.
 
 [Answer](https://stackoverflow.com/questions/62484932/mongodb-rust-client-connection-errors/62487393#62487393)
+
+### Asking on Stack Overflow
+
+If you are asking a connectivity-related question on Stack Overflow, collect
+and include in your question *all* of the following information:
+
+- The server version you are connecting to.
+- The `mongo` shell version (can differ from server version), if you are
+  asking about connectivity via the shell.
+- The MongoDB driver you are using and driver version, if you are asking about
+  connectivity via the driver
+- The exact and *complete* error message you have received.
+- Any relevant information from the server log(s).
 
 ## Operation
 
