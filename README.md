@@ -24,6 +24,10 @@ For example, it is generally not possible to have a replica set with one
 node in a data center (or otherwise somewhere on the internet) and another
 node on one's home network.
 
+### Server Log
+
+[Where to find server log](https://docs.mongodb.com/manual/reference/log-messages/#configuring-log-message-destinations)
+
 ## Connectivity
 
 ### General Connectivity Troubleshooting
