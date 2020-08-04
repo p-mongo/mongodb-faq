@@ -116,3 +116,14 @@ Not supported:
 ### Case Insensitive Querying
 
 [Answer](https://stackoverflow.com/questions/62576025/case-sensitive-while-querying-in-mongodb)
+
+## Asking Questions
+
+### It Doesn't Work
+
+What doesn't work how? Add to the question:
+
+- What you have done
+- What the results were
+
+[See also this](http://catb.org/~esr/faqs/smart-questions.html#bespecific)
