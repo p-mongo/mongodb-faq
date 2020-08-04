@@ -127,3 +127,23 @@ What doesn't work how? Add to the question:
 - What the results were
 
 [See also this](http://catb.org/~esr/faqs/smart-questions.html#bespecific)
+
+### Reference MongoDB Documentation
+
+You are asking a question about how MongoDB behaves but you have not referenced
+official documentation describing the behavior you are asking about.
+
+Please link to the official documentation from your question that describes
+the behavior that you are asking about.
+
+### Specify Software Versions
+
+Your question may have different answers depending on which version of
+MongoDB, the driver, etc. you are using. Please include versions of all
+components you are asking about in your question.
+
+Some of the components are:
+
+- Server
+- `mongo` shell
+- Driver
