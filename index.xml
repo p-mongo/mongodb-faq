@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on MongoDB FAQ</title>
+    <link>http://example.org/</link>
+    <description>Recent content in Home on MongoDB FAQ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Feb 2021 21:42:03 -0500</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Batch Size</title>
+      <link>http://example.org/batch-size/</link>
+      <pubDate>Wed, 10 Feb 2021 21:42:03 -0500</pubDate>
+      
+      <guid>http://example.org/batch-size/</guid>
+      <description>Troubleshooting batch size issues Verify the expected batch size is sent in the query. Inspect the query sent to the server using command monitoring. Example using Ruby:
+irb(main):007:0&amp;gt; a[&#39;foo&#39;].find.batch_size(5) =&amp;gt; #&amp;lt;Mongo::Collection::View:0x860 namespace=&#39;admin.foo&#39; @filter={} @options={&amp;quot;batch_size&amp;quot;=&amp;gt;5}&amp;gt; irb(main):008:0&amp;gt; a[&#39;foo&#39;].find.batch_size(5).to_a D, [2021-02-10T21:30:25.137237 #16698] DEBUG -- : MONGODB | localhost:14400 req:10 conn:1:1 sconn:502 | admin.find | STARTED | {&amp;quot;find&amp;quot;=&amp;gt;&amp;quot;foo&amp;quot;, &amp;quot;filter&amp;quot;=&amp;gt;{}, &amp;quot;batchSize&amp;quot;=&amp;gt;5, &amp;quot;$db&amp;quot;=&amp;gt;&amp;quot;admin&amp;quot;, &amp;quot;lsid&amp;quot;=&amp;gt;{&amp;quot;id&amp;quot;=&amp;gt;&amp;lt;BSON::Binary:0x780 type=uuid data=0x83044920080f4adc...&amp;gt;}} D, [2021-02-10T21:30:25.138153 #16698] DEBUG -- : MONGODB | localhost:14400 req:10 | admin.</description>
+    </item>
+    
+  </channel>
+</rss>
