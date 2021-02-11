@@ -3,12 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://p-mongo.github.io/mongodb-faq/batch-size/</loc>
+    <loc>https://p-mongo.github.io/mongodb-faq/query/batch-size/</loc>
     <lastmod>2021-02-10T21:42:03-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://p-mongo.github.io/mongodb-faq/</loc>
+    <lastmod>2021-02-10T21:42:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://p-mongo.github.io/mongodb-faq/query/indexing-query-optimization/</loc>
+    <lastmod>2021-02-10T21:42:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://p-mongo.github.io/mongodb-faq/query/</loc>
     <lastmod>2021-02-10T21:42:03-05:00</lastmod>
   </url>
   

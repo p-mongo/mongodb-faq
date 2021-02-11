@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>MongoDB FAQ</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="">
+    <meta name="generator" content="Hugo 0.80.0" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+
+  
+  
+    <link rel="stylesheet" href="/mongodb-faq/ananke/dist/main.css_5c99d70a7725bacd4c701e995b969fea.css" >
+  
+
+
+
+
+    
+      
+
+    
+
+    
+    
+      <link href="/mongodb-faq/query/index.xml" rel="alternate" type="application/rss+xml" title="MongoDB FAQ" />
+      <link href="/mongodb-faq/query/index.xml" rel="feed" type="application/rss+xml" title="MongoDB FAQ" />
+      
+    
+    
+    <meta property="og:title" content="Queries" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://p-mongo.github.io/mongodb-faq/query/" />
+<meta property="og:updated_time" content="2021-02-10T21:42:03-05:00" />
+<meta itemprop="name" content="Queries">
+<meta itemprop="description" content="">
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Queries"/>
+<meta name="twitter:description" content=""/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+
+  <header>
+    <div class="pb3-m pb6-l bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/mongodb-faq/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        MongoDB FAQ
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv3 ph3 ph4-ns">
+        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
+          Queries
+        </h1>
+        
+      </div>
+    </div>
+  </header>
+
+
+    <main class="pb7" role="main">
+      
+  <article class="pa3 pa4-ns nested-copy-line-height nested-img">
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></section>
+    <section class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Query</span>
+    <h1 class="f3 near-black">
+      <a href="https://p-mongo.github.io/mongodb-faq/query/batch-size/" class="link black dim">
+        Batch Size
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Troubleshooting batch size issues Verify the expected batch size is sent in the query. Inspect the query sent to the server using command monitoring. Example using Ruby:
+irb(main):007:0&gt; a['foo'].find.batch_size(5) =&gt; #&lt;Mongo::Collection::View:0x860 namespace='admin.foo' @filter={} @options={&quot;batch_size&quot;=&gt;5}&gt; irb(main):008:0&gt; a['foo'].find.batch_size(5).to_a D, [2021-02-10T21:30:25.137237 #16698] DEBUG -- : MONGODB | localhost:14400 req:10 conn:1:1 sconn:502 | admin.find | STARTED | {&quot;find&quot;=&gt;&quot;foo&quot;, &quot;filter&quot;=&gt;{}, &quot;batchSize&quot;=&gt;5, &quot;$db&quot;=&gt;&quot;admin&quot;, &quot;lsid&quot;=&gt;{&quot;id&quot;=&gt;&lt;BSON::Binary:0x780 type=uuid data=0x83044920080f4adc...&gt;}} D, [2021-02-10T21:30:25.138153 #16698] DEBUG -- : MONGODB | localhost:14400 req:10 | admin.
+    </div>
+  </div>
+</div>
+</div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Query</span>
+    <h1 class="f3 near-black">
+      <a href="https://p-mongo.github.io/mongodb-faq/query/indexing-query-optimization/" class="link black dim">
+        Indexing &amp; Query Optimization
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Query Plan Any question that asks about:
+ Performance of a query Relative performance of two or more queries Why an index is used or not used  &hellip; should include explained query plans with execution statistics for all queries involved.
+How to do it in: MongoDB shell.
+    </div>
+  </div>
+</div>
+</div>
+      
+    </section>
+
+</article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://p-mongo.github.io/mongodb-faq/" >
+    &copy;  MongoDB FAQ 2021 
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
